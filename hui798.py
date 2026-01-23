@@ -312,7 +312,7 @@ def main():
     log(f"执行时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     
     sign_url = SIGN_URL
-    card_key = get_env("HUI798_KEY")
+    card_key = get_env("HUI798_KEY","MRRIFAN4S5CU1L5I")
     
     worker_tasks = get_worker_tasks(sign_url)
     if not worker_tasks:
